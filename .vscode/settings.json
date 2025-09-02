@@ -1,0 +1,12 @@
+{
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.formatOnSave": true,
+    "editor.indentSize": 4,
+    "editor.codeActionsOnSave": {
+        "source.fixAll": "explicit",
+        "source.organizeImports": "explicit",
+    },
+    "ruff.enable": true,
+    "ruff.lint.enable": true,
+    "ruff.organizeImports": true
+}
