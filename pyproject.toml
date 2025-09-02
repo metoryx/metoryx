@@ -1,0 +1,29 @@
+[project]
+name = "metoryx"
+version = "0.1.0"
+description = "A neural network library for JAX that combines functional init/apply style with a flexible model definition."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "jax>=0.7.1",
+    "jaxlib>=0.7.1",
+]
+
+[dependency-groups]
+dev = [
+    "chex>=0.1.90",
+    "flax>=0.11.2",
+    "myst-parser>=4.0.1",
+    "pytest>=8.4.2",
+    "ruff>=0.12.11",
+    "shibuya>=2025.8.16",
+    "sphinx>=8.2.3",
+]
+
+[tool.ruff]
+line-length = 100
+select = ["E4", "E7", "E9", "F"]
+ignore = ["E731"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
